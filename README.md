@@ -20,7 +20,7 @@
 3. Build image from Dockerfile:
 
 ```sh
-    sudo docker build -t jira_img .
+    docker build -t jira_img .
 ```
 
 4. Run JIRA:
