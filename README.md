@@ -16,7 +16,14 @@
 
         ALTER DATABASE jira_database CHARACTER SET utf8 COLLATE utf8_bin;
 
-2. Run JIRA:
+
+3. Build image from Dockerfile:
+
+```sh
+    sudo docker build -t jira_img .
+```
+
+4. Run JIRA:
 
 ```sh
     docker run --name jira_app -p 8080:8080 -v /home/$USER/jira:/var/atlassian/jira --link mysql_db:database -d jira_img
